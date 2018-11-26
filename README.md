@@ -4,3 +4,18 @@
 ## 项目实现功能：
 `通过调用豆瓣官方提供的电影api 实现[正在热映],[即将上映],[TOP250],[新影片]4个功能模块;`
 
+## 真机预览图
+1. 首页：
+ + ![正在加载...](https://github.com/RoseSnow/DouBan_Movies/tree/master/previews/home.jpg)
+
+2. 四个功能模块：
+ + ![正在加载...](https://github.com/RoseSnow/DouBan_Movies/tree/master/previews/zzry.jpg)
+
+ + ![正在加载...](https://github.com/RoseSnow/DouBan_Movies/tree/master/previews/jjsy.jpg)
+
+ + ![正在加载...](https://github.com/RoseSnow/DouBan_Movies/tree/master/previews/top250.jpg)
+
+ + ![正在加载...](https://github.com/RoseSnow/DouBan_Movies/tree/master/previews/new.jpg)
+
+
+
