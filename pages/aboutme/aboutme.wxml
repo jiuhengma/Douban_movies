@@ -1,0 +1,5 @@
+<view class="me">
+    <view class="img">
+        <image src="../../images/aboutme/wechat.jpg" />
+    </view>
+</view>

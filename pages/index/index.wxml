@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 轮播图区域 -->
+  <view class="slide">
+    <swiper indicator-dots="{{indicatorDots}}" circular="{{circular}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}} ">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="aspectFill"/>
+      </swiper-item>
+    </block>
+    </swiper>
+  </view>
+
+  <!-- 标题 -->
+  <view class="title">
+      电影榜单
+  </view>
+
+  <!-- 列表区域 -->
+  <view class="board">
+    <navigator url="../list/list?type=in_theaters&name=正在热映" hover-class="none">
+      <view class="board-item">
+        <text >正在热映</text>
+        <image src="../../images/icons/rightarrow.png" />
+      </view>
+    </navigator>
+    <navigator url="../list/list?type=coming_soon&name=即将上映" hover-class="none">
+      <view class="board-item">
+        <text >即将上映</text>
+        <image src="../../images/icons/rightarrow.png" />
+      </view>
+    </navigator>
+    <navigator url="../list/list?type=top250&name=Top250" hover-class="none" >
+      <view class="board-item">
+        <text >Top250</text>
+        <image src="../../images/icons/rightarrow.png" />
+      </view>
+    </navigator>
+    <navigator url="../list/list?type=new_movies&name=新片榜" hover-class="none">
+      <view class="board-item">
+        <text >新片榜</text>
+        <image src="../../images/icons/rightarrow.png" />
+      </view>
+    </navigator>
+  </view>
+
+</view>
