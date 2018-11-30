@@ -16,7 +16,7 @@ Page({
   // 口碑榜：https://douban.uieee.com/v2/movie/weekly
   // 新片榜：https://douban.uieee.com/v2/movie/new_movies
   // 电影搜索：https://douban.uieee.com/v2/movie/search
-  onLoad: function(params){
+  onLoad(params){
     // const _this = this;
     const apiUrl = "https://douban.uieee.com/v2/movie/" + params.type;
     wx.request({

@@ -2,4 +2,14 @@
     <view class="img">
         <image src="../../images/aboutme/wechat.jpg" />
     </view>
+    <view class="wx">
+        <text class="a">这是我的微信</text> 
+    </view>
+    <view class="info">
+        <view class="line">
+            <view class="line1">一城烟雨一楼台</view>
+            <view class="line2">一花只为一树开</view>
+        </view>
+        <text class="author">__Sonw.2018</text>
+    </view>
 </view>

@@ -11,7 +11,7 @@
   width: 100%;
   height: 280rpx;
   margin-top: 19rpx;
-  padding: 10rpx;
+  padding: 9rpx;
   border: 1px solid #c4c4c4;
   box-shadow: 5px 5px 4px #888888;
   display: flex;
@@ -27,20 +27,24 @@
   height: 100%;
   margin-right: 20rpx;
   text-align: left;
-  background-color: #f3f3f3;
-
+  color: #005b5b;
+  text-shadow: 2rpx 4rpx 15rpx #9d9d9d;
+  font-size: 26rpx;
 }
 .detail{
   font-size: 23rpx;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .detail :first-child{
   margin-top: 10rpx;
   margin-bottom: 10rpx;
   font-size: 33rpx;
   font-weight: 800;
+  color: #35495e;
 }
+
 
 .left image{
 

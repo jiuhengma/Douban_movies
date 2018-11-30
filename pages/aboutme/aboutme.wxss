@@ -1,2 +1,42 @@
+.me{
+    width: 100%;
+    height: 500rpx;
+}
+
+.img{
+    width: 300rpx;
+    margin: auto;
+    height: 300rpx;
+}
+image{
+    width: 100%;
+    height: 100%;
+}
+
+.a{
+    margin-left: 23rpx; 
+    font-family: '隶书';
+    color: #008040;
+    text-shadow: 2rpx 4rpx 15rpx #9d9d9d;
+}
+
+.line{
+    font-size: 32rpx;
+    text-align: center;
+    font-family: '隶书';
+    color: #008040;
+    margin-top: 300rpx;
+    line-height: 36rpx;
+    text-shadow: 2rpx 4rpx 15rpx #9d9d9d;
+}
+
+.author{
+    font-size: 23rpx;
+    font-weight: 800;
+    font-family: '隶书';
+    color: #008040;
+    margin: 3rpx 0 0 480rpx; 
+    text-shadow: 2rpx 4rpx 15rpx #9d9d9d;
+}
 
 

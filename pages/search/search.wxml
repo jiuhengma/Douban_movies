@@ -1,0 +1,24 @@
+<view class="section">
+    <view class="up">
+        <input focus="{{true}}" type="text" adjust-position="position" bindinput="bindKeyInput" placeholder="请输入电影名称..." bindconfirm="search" bindblur="clear"/>
+        <button type="primary" size="{{primarySize}}" plain="{{plain}}"
+        disabled="{{disabled}}" type="primary"  bindtap="search"> 搜索 </button>
+    </view>
+
+    <view class="info" wx:for="{{ searchlist }}">
+        <view class="title">{{ item.title }} <span>({{item.year}})</span></view>
+            <view class="tu">
+                <view class="img">
+                    <image  src="{{ item.images.small }}"/>
+                </view>
+                <view class="name">
+                    <view>导演：{{ item.directors[0].name }}</view>
+                    <view>评分：<text style="color:red">{{ item.rating.average }}</text></view>
+                    <view>主演：{{item.casts[0].name}}/{{item.casts[1].name}}/{{item.casts[2].name}}</view>
+                    <view>类型：{{item.genres[0]}}/{{item.genres[1]}}/{{item.genres[2]}}</view>
+                    <view>上映时间：{{item.pubdates[0]}}</view>
+                    <view>片长：{{item.durations[0]}}</view>
+                </view>
+            </view>
+    </view>
+</view>
