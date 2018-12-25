@@ -3,7 +3,7 @@
         <image src="../../images/aboutme/wechat.jpg" />
     </view>
     <view class="wx">
-        <text class="a">这是我的微信</text> 
+        <text class="a">扫一扫加微信</text> 
     </view>
     <view class="info">
         <view class="line">

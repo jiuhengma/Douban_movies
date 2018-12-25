@@ -1,15 +1,15 @@
 
 .up{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 13rpx;
-    padding: 0 50rpx;
 }
 
 input{
     width: 50%;
     height: 60rpx;
-    margin: 5rpx 0 0 60rpx;
+    margin: 0 10rpx;
     font-size: 35rpx;
     border: 1rpx solid #4d9999;
     border-radius: 10rpx;
@@ -17,8 +17,9 @@ input{
 }
 
 button{
-    margin-top: 5rpx;
-    height: 60rpx;
+    /* margin-top: 5rpx; */
+    margin: 0;
+    height: 63rpx;
     line-height: 60rpx;
 }
 

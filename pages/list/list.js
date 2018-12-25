@@ -4,6 +4,7 @@ const app = getApp()
 
 Page({
   data:{
+    windowHeight: 0,
     list:[],
     title:'Loading...'
   },
@@ -17,24 +18,58 @@ Page({
   // 新片榜：https://douban.uieee.com/v2/movie/new_movies
   // 电影搜索：https://douban.uieee.com/v2/movie/search
   onLoad(params){
-    // const _this = this;
+    // 获取屏幕高度
+    wx.getSystemInfo({
+      success: (res) => {
+        this.setData({
+          windowHeight: res.windowHeight
+        })
+        console.log(res.windowHeight);
+      }
+    });
+
+    // 请求数据
     const apiUrl = "https://douban.uieee.com/v2/movie/" + params.type;
+    // console.log(params.type + '&start='  + '&count=' + params.count);
     wx.request({
       url: apiUrl,
-      data:{},
+      data:{
+        start: 0,
+        count: 20
+      },
       header:{
         'content-type': 'json'
       },
       success: (res)=>{
         this.setData({
-
           list: res.data.subjects,
           title: res.data.title
         })
       }
     })
   },
-  load: () => {
-
-  }
+  
+  // loadMore: (params) => {
+  //   var start = 0;
+  //   var count = 0;
+  //   //请求数据
+  //   const apiUrl = "https://douban.uieee.com/v2/movie/" + params.type;
+   
+  //   wx.request({
+  //     url: apiUrl,
+  //     data:{
+  //       start: start + 11,
+  //       count: count + 10
+  //     },
+  //     header:{
+  //       'content-type': 'json'
+  //     },
+  //     success: (res)=>{
+  //       console.log(res)
+  //     }
+  //   })
+  //   console.log(params.type)
+    
+  // }
+  
 })

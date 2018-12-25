@@ -2,9 +2,9 @@
   "pages":[
     "pages/index/index",
     "pages/list/list",
+    "pages/item/item",
     "pages/search/search",
     "pages/aboutme/aboutme"
-
   ],
   "window":{
     "backgroundTextStyle":"light",

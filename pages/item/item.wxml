@@ -1,0 +1,27 @@
+<scroll-view >
+    <view class="movies-info">
+        <view>
+            <view class="title">{{ itemList.title }}<text style="font-size: 28rpx; margin-left: 10rpx; color: #750000;">{{ itemList.year }}</text></view>
+            <view class="tu">
+                <view class="img">
+                    <image src="{{ itemList.images.small }}"/>
+                </view>
+                <view class="name">
+                    <view>导演：<text ><block wx:for="{{itemList.directors}}">{{ item.name }}/</block></text></view>
+                    <view>编剧：<text ><block wx:for="{{itemList.writers}}">{{ item.name }}/</block></text></view>
+                    <view>主演：<text ><block wx:for="{{itemList.casts}}">{{ item.name }}/</block></text></view>
+                    <view>类型：<text >{{ itemList.genres[0] }}/{{ itemList.genres[1] }}</text></view>
+                    <view>制片国家/地区：<text >{{ itemList.countries[0] }}/{{ itemList.countries[1] }}</text></view>
+                    <view>语言：<text >{{ itemList.languages[0] }}/{{ itemList.languages[1] }}</text></view>
+                    <view>上映时间：<text >{{ itemList.pubdates[0] }}</text></view>
+                    <view>片长：<text >{{ itemList.durations }}</text></view>
+                </view>
+            </view>
+            
+        </view>
+        <view class="info">
+            <view class="info-title">{{ itemList.title }}的剧情简介...</view>
+            <view class="present">{{ itemList.summary }}</view>
+        </view>
+    </view>
+</scroll-view>
