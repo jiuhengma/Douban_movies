@@ -19,30 +19,29 @@
 
   <!-- 列表区域 -->
   <view class="board">
-    <navigator url="../list/list?type=in_theaters&start=0&count=20" hover-class="none">
+    <navigator url="../list/list?type=in_theaters" hover-class="none">
       <view class="board-item">
         <text >正在热映</text>
         <image src="../../images/icons/rightarrow.png" />
       </view>
     </navigator>
-    <navigator url="../list/list?type=coming_soon&start=0&count=20" hover-class="none">
+    <navigator url="../list/list?type=coming_soon" hover-class="none">
       <view class="board-item">
         <text >即将上映</text>
         <image src="../../images/icons/rightarrow.png" />
       </view>
     </navigator>
-    <navigator url="../list/list?type=top250&start=0&count=20" hover-class="none" >
+    <navigator url="../list/list?type=top250" hover-class="none" >
       <view class="board-item">
         <text >Top250</text>
         <image src="../../images/icons/rightarrow.png" />
       </view>
     </navigator>
-    <navigator url="../list/list?type=new_movies&start=0&count=20" hover-class="none">
+    <navigator url="../list/list?type=new_movies" hover-class="none">
       <view class="board-item">
         <text >新片榜</text>
         <image src="../../images/icons/rightarrow.png" />
       </view>
     </navigator>
   </view>
-
 </view>

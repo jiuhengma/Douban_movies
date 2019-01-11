@@ -9,7 +9,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#35495e",
-    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTitleText": "假面影咖",
     "navigationBarTextStyle":"white"
   },
   "tabBar": { 

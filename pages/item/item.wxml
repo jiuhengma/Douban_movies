@@ -1,5 +1,10 @@
 <scroll-view >
-    <view class="movies-info">
+
+    <view class="loading">
+        <loading hidden="{{lodingHidden}}">玩命加载中...</loading>
+    </view>
+
+    <view class="movies-info" hidden="{{infoHidden}}">
         <view>
             <view class="title">{{ itemList.title }}<text style="font-size: 28rpx; margin-left: 10rpx; color: #750000;">{{ itemList.year }}</text></view>
             <view class="tu">

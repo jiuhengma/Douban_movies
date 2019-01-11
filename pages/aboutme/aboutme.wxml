@@ -1,9 +1,9 @@
 <view class="me">
     <view class="img">
-        <image src="../../images/aboutme/wechat.jpg" />
+        <image src="../../images/aboutme/gzh.jpg" />
     </view>
     <view class="wx">
-        <text class="a">扫一扫加微信</text> 
+        <view class="a">关注微信公众号</view> 
     </view>
     <view class="info">
         <view class="line">

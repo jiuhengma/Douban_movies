@@ -3,27 +3,33 @@
     <view class="title">
         {{ title }}
     </view>
-    <!-- <navigator url="../item/item?id=9" hover-class="none"> -->
-        <view id='item' wx:for="{{ list }}" wx:key="item.id">
-            <navigator url="../item/item?id={{item.id}}" hover-class="none">
-                <view class='item' >
-                    <view class="left">
-                        <image src="{{item.images.small}}"></image>
-                    </view>
-                    <view class="right">
-                        <view class="detail">
-                            <view >{{ item.title }}</view>
-                            <view >评分：<text style="color:red; font-size:23rpx">{{ item.rating.average }}</text></view>
-                            <view >导演：{{ item.directors[0].name }}</view>
-                            <view >类型：{{ item.genres[0] }}/{{ item.genres[1] }}</view>
-                            <view >影片时长：{{ item.durations[0]}}</view>
-                            <view >年份/发行地：{{item.pubdates[0]}}</view>
-                            <!-- <view >年份/发行地：{{item.id}}</view> -->
-                        </view>
+
+    <!-- 循环渲染列表数据 -->
+    <view id='item' wx:for="{{ list }}" wx:key="item.id">
+        <navigator url="../item/item?id={{item.id}}" hover-class="none">
+            <view class='item' >
+                <view class="left">
+                    <image src="{{item.images.small}}"></image>
+                </view>
+                <view class="right">
+                    <view class="detail">
+                        <view >{{ item.title }}</view>
+                        <view >评分：<text style="color:red; font-size:23rpx">{{ item.rating.average }}</text></view>
+                        <view >导演：{{ item.directors[0].name }}</view>
+                        <view >类型：{{ item.genres[0] }}/{{ item.genres[1] }}</view>
+                        <view >影片时长：{{ item.durations[0]}}</view>
+                        <view >年份/发行地：{{item.pubdates[0]}}</view>
+                        <!-- <view >年份/发行地：{{item.id}}</view> -->
                     </view>
                 </view>
-            </navigator>
-        </view>
-    <!-- </navigator> -->
+            </view>
+        </navigator>
+    </view>
+
     
+    <!-- 执行加载更多时的动画效果 -->
+    <view class="loading">
+        <loading hidden="{{hidden}}">玩命加载中...</loading>
+    </view>
+
 </scroll-view>
