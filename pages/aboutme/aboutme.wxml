@@ -3,13 +3,13 @@
         <image src="../../images/aboutme/gzh.jpg" />
     </view>
     <view class="wx">
-        <view class="a">关注微信公众号</view> 
+        <view class="a">扫码关注微信公众号</view> 
     </view>
     <view class="info">
         <view class="line">
             <view class="line1">一城烟雨一楼台</view>
             <view class="line2">一花只为一树开</view>
         </view>
-        <text class="author">__Sonw.2018</text>
+        <text class="author">__Snow.2018</text>
     </view>
 </view>
