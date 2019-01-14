@@ -25,11 +25,4 @@
             </view>
         </navigator>
     </view>
-
-    
-    <!-- 执行加载更多时的动画效果 -->
-    <view class="loading">
-        <loading hidden="{{hidden}}">玩命加载中...</loading>
-    </view>
-
 </scroll-view>

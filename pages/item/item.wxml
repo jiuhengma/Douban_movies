@@ -1,8 +1,6 @@
 <scroll-view >
 
-    <view class="loading">
-        <loading hidden="{{lodingHidden}}">玩命加载中...</loading>
-    </view>
+    
 
     <view class="movies-info" hidden="{{infoHidden}}">
         <view>

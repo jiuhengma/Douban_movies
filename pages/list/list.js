@@ -6,7 +6,6 @@ Page({
   data:{
     start: 0,
     count: 10,
-    hidden: true,
     windowHeight: 0,
     type: '',
     list:[],
@@ -41,6 +40,7 @@ Page({
 
     // 挂载getMoviesList方法
     this.getMoviesList(params);
+
   },
 
   getMoviesList(params){
@@ -74,15 +74,17 @@ Page({
       start: this.data.start + 10, 
       count: 10,
       // 显示加载动画
-      hidden: false 
+      // hidden: false 
     });
+    wx.showLoading({
+      title: "正在加载..."
+    })
+
 
     // 启动一个定时器，使加载动效持续1.5秒，并执行请求操作
     setTimeout( () => {
-      this.setData({
-        // 隐藏加载动画
-        hidden: true
-      });
+      // 隐藏加载动画
+      wx.hideLoading()
       // console.log(params)
       // 执行数据请求操作
       this.getMoviesList(params)

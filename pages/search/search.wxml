@@ -1,6 +1,6 @@
 <view class="section">
     <view class="up">
-        <input focus="{{true}}" type="text" adjust-position="position" bindinput="bindKeyInput" placeholder="请输入电影名称..." bindconfirm="search" bindblur="clear"/>
+        <input focus="{{true}}" type="text" adjust-position="position" bindinput="bindKeyInput" placeholder="请输入关键字..." bindconfirm="search" bindblur="clear"/>
         <button type="primary" size="{{primarySize}}" plain="{{plain}}"
         disabled="{{disabled}}" type="primary"  bindtap="search"> 搜索 </button>
     </view>

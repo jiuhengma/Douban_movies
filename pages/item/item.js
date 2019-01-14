@@ -1,26 +1,23 @@
 Page({
     data:{
         id: '',
-        loadingHidden: true,
         infoHidden: true,
         itemList: []
     },
 
     onLoad(params){
 
-        this.setData({
-            // 加载时展示动画效果
-            lodingHidden: false
+        wx.showLoading({
+            title: "玩儿命加载中..."
         })
 
-        // 启动一个定时器使加载有个2s的动效
+        // 启动一个定时器使加载有个1s的动效
         setTimeout( () => {
             this.setData({
-                // 隐藏动画效果
-                lodingHidden: true,
                 // 展示信息[默认为隐藏]
                 infoHidden: false, 
             })
+            wx.hideLoading()
             this.getMoviesInfo(params)
         },1000)
     },
